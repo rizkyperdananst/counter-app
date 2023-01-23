@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+:root {
+    --blue-dark: rgb(4, 4, 49);
+    --blue-light: rgb(15, 137, 194);
+    --blue: rgb(0, 255, 170);
+    --padding-button: 8px;
+    --border-none: none;
+    --border-radius: 5px;
+}
+
+body {
+    background-color: var(--blue-light);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    margin: 13% auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.container h1 {
+    margin-top: -10px;
+}
+
+.container .counter-preview {
+    font-size: 40px;
+}
+
+.container .allBtns button.decrement {
+    padding: var(--padding-button);
+    border: var(--border-none);
+    background-color: green;
+    border-radius: var(--border-radius);
+}
+
+.container .allBtns button.increment {
+    padding: var(--padding-button);
+    border: var(--border-none);
+    background-color: var(--blue-light);
+    border-radius: var(--border-radius);
+}
+
+.container .allBtns button.reset {
+    padding: var(--padding-button);
+    border: var(--border-none);
+    background-color: red;
+    border-radius: var(--border-radius);
+}
+
+.allBtns button:hover {
+    cursor: pointer;
+}
